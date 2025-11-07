@@ -1,13 +1,13 @@
 # Cấu hình dịch vụ taxi
 services:
   - name: "Taxi Trong Thành Phố"
-    description: "Phục vụ di chuyển trong nội thành Vinh với giá cả hợp lý, tài xế thân thiện và xe sạch sẽ."
-    price: "15,000đ/km"
+    description: "Phục vụ di chuyển trong nội thành Sapa với giá cả hợp lý, tài xế thân thiện và xe sạch sẽ."
+    price: "18,000đ/km"
     icon: "🚕"
 
   - name: "Taxi Liên Tỉnh"
-    description: "Đưa đón sân bay Vinh, di chuyển đến Hà Tĩnh, Quảng Bình với mức giá cạnh tranh."
-    price: "Từ 120,000đ"
+    description: "Đưa đón sân bay Nội Bài, di chuyển đến Hà Nội, Lào Cai với mức giá cạnh tranh."
+    price: "Từ 150,000đ"
     icon: "🚗"
 
   - name: "Phục Vụ 24/7"
@@ -18,36 +18,38 @@ services:
 # Khu vực phục vụ
 service_areas:
   local:
-    - "Nội thành Vinh"
-    - "Các huyện trong Nghệ An"
+    - "Nội thành Sapa"
+    - "Các huyện trong Lào Cai"
   
   inter_province:
-    - "Hà Tĩnh"
-    - "Quảng Bình" 
-    - "Thanh Hóa"
     - "Hà Nội"
+    - "Lào Cai" 
+    - "Yên Bái"
+    - "Hà Giang"
   
   airports:
-    - "Sân bay Vinh"
+    - "Sân bay Nội Bài"
   
   tourist:
-    - "Các điểm du lịch trong tỉnh"
-    - "Khu vực lân cận"
+    - "Fansipan"
+    - "Bản Cát Cát"
+    - "Thác Bạc"
+    - "Các điểm du lịch trong vùng"
 
 # Bảng giá tham khảo
 pricing:
   city:
     name: "Trong Thành Phố"
-    price: "15,000đ/km"
+    price: "18,000đ/km"
   
-  airport_vinh:
-    name: "Sân Bay Vinh"
-    price: "120,000đ"
+  airport_noibai:
+    name: "Sân Bay Nội Bài"
+    price: "1,200,000đ"
   
-  hatinh:
-    name: "Đi Hà Tĩnh"
-    price: "180,000đ"
+  hanoi:
+    name: "Đi Hà Nội"
+    price: "1,000,000đ"
   
-  quangbinh:
-    name: "Đi Quảng Bình"
-    price: "220,000đ"
+  laocai:
+    name: "Đi Lào Cai"
+    price: "150,000đ"

@@ -1,32 +1,32 @@
-baseURL = 'http://taxinghean.io.vn/'
+baseURL = 'http://taxisapa.io.vn/'
 languageCode = 'vi'
-title = 'Taxi Nghệ An - Dịch Vụ Taxi Uy Tín'
+title = 'Taxi Sapa - Dịch Vụ Taxi Uy Tín'
 theme = 'taxidongha'
 
 [params]
-  description = "Dịch vụ taxi uy tín tại Nghệ An. Phục vụ 24/7 với giá cả hợp lý."
+  description = "Dịch vụ taxi uy tín tại Sapa. Phục vụ 24/7 với giá cả hợp lý."
   phone = "0989511431"
-  email = "info@sotaxinghean.io.vn"
-  address = "Nghệ An, Việt Nam"
+  email = "info@sotaxisapa.io.vn"
+  address = "Sapa, Lào Cai, Việt Nam"
   
   # SEO & Social Media
-  keywords = "so taxi nghe an, taxi Nghệ An, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi"
-  author = "Taxi Nghệ An"
+  keywords = "so taxi sapa, taxi Sapa, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi, taxi Lào Cai"
+  author = "Taxi Sapa"
   image = "/hero1.jpeg"
   logo = "/favicon.ico"
   
   # Business Info
-  business_name = "Taxi Nghệ An"
+  business_name = "Taxi Sapa"
   business_type = "TaxiService"
-  latitude = "18.7943"
-  longitude = "105.6745"
-  postal_code = "43000"
-  region = "Nghệ An"
+  latitude = "22.3364"
+  longitude = "103.8438"
+  postal_code = "33000"
+  region = "Lào Cai"
   country = "Vietnam"
   
   # Social Media
-  facebook = "https://facebook.com/sotaxinghean"
-  zalo = "https://zalo.me/sotaxinghean"
+  facebook = "https://facebook.com/sotaxisapa"
+  zalo = "https://zalo.me/sotaxisapa"
 
 # AMP Configuration
 [outputFormats.AMP]

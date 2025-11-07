@@ -1,9 +1,9 @@
 ---
 title: "Cập Nhật Bảng Giá Cước Taxi Mới Năm 2024"
 date: 2024-11-05T14:30:00+07:00
-description: "Taxi Nghệ An công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
-summary: "Taxi Nghệ An công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
-keywords: "bảng giá taxi, giá cước taxi, taxi Nghệ An, giá taxi 2024, Nghệ An"
+description: "Taxi Sapa công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
+summary: "Taxi Sapa công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
+keywords: "bảng giá taxi, giá cước taxi, taxi Sapa, giá taxi 2024, Sapa, Lào Cai"
 image: "/banner01.jpg"
 ---
 
@@ -11,28 +11,28 @@ image: "/banner01.jpg"
 
 Kính gửi quý khách hàng,
 
-**Taxi Nghệ An** xin thông báo bảng giá cước mới có hiệu lực từ ngày **01/11/2024**, nhằm mang đến dịch vụ tốt nhất với mức giá hợp lý.
+**Taxi Sapa** xin thông báo bảng giá cước mới có hiệu lực từ ngày **01/11/2024**, nhằm mang đến dịch vụ tốt nhất với mức giá hợp lý.
 
 ## Bảng Giá Mới
 
 ### Taxi 4 Chỗ
-- **Giá mở cửa**: 15,000 VNĐ (2km đầu)
-- **Km tiếp theo**: 12,000 VNĐ/km
-- **Thời gian chờ**: 3,000 VNĐ/phút
-
-### Taxi 7 Chỗ
 - **Giá mở cửa**: 18,000 VNĐ (2km đầu)
 - **Km tiếp theo**: 15,000 VNĐ/km
 - **Thời gian chờ**: 4,000 VNĐ/phút
+
+### Taxi 7 Chỗ
+- **Giá mở cửa**: 22,000 VNĐ (2km đầu)
+- **Km tiếp theo**: 18,000 VNĐ/km
+- **Thời gian chờ**: 5,000 VNĐ/phút
 
 ## Các Tuyến Đường Cố Định
 
 | Tuyến Đường | Giá Cước |
 |-------------|----------|
-| Nghệ An - Sân bay Vinh | 120,000 VNĐ |
-| Nghệ An - Hà Tĩnh | 180,000 VNĐ |
-| Nghệ An - Quảng Bình | 220,000 VNĐ |
-| Nghệ An - Thành phố Hồ Chí Minh | Thỏa thuận |
+| Sapa - Sân bay Nội Bài | 1,200,000 VNĐ |
+| Sapa - Hà Nội | 1,000,000 VNĐ |
+| Sapa - Lào Cai | 150,000 VNĐ |
+| Sapa - Fansipan | 80,000 VNĐ |
 
 ## Chính Sách Ưu Đãi
 
