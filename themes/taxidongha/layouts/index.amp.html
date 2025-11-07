@@ -1,0 +1,188 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Taxi Hải Phòng</h1>
+    <p>Dịch vụ taxi uy tín, an toàn và nhanh chóng tại Hải Phòng, Quảng Trị</p>
+    <a href="tel:{{ site.Params.phone }}" class="btn">Gọi Taxi Ngay</a>
+  </div>
+</section>
+
+<!-- Quick Booking Section -->
+<section class="container">
+  <div class="card">
+    <h2>Đặt Xe Nhanh</h2>
+    <p>Liên hệ ngay để đặt xe taxi với giá cả hợp lý</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <strong>📞 Hotline: {{ site.Params.phone }}</strong>
+      </div>
+      <div class="contact-item">
+        <strong>✉️ Email: {{ site.Params.email }}</strong>
+      </div>
+      <div class="contact-item">
+        <strong>📍 Địa chỉ: {{ site.Params.address }}</strong>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="tel:{{ site.Params.phone }}" class="btn">Gọi Ngay</a>
+    </div>
+  </div>
+</section>
+
+<!-- Latest News Section -->
+<section class="container">
+  <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Tin Tức Mới Nhất</h2>
+  <div class="grid grid-3">
+    {{ range first 3 (where site.RegularPages "Section" "news") }}
+    <article class="card">
+      <div class="news-meta">
+        <time>{{ .Date.Format "02/01/2006" }}</time>
+        <span class="news-category">Tin Tức</span>
+      </div>
+      
+      <h3>
+        <a href="{{ .RelPermalink }}amp/" style="color: #2c3e50; text-decoration: none;">{{ .Title }}</a>
+      </h3>
+      
+      <div style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
+        {{ if .Summary }}
+          {{ .Summary | truncate 120 }}
+        {{ else }}
+          {{ .Content | truncate 120 }}
+        {{ end }}
+      </div>
+      
+      <div>
+        <a href="{{ .RelPermalink }}amp/" class="btn btn-outline">Đọc Thêm</a>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  
+  <div style="text-align: center; margin-top: 2rem;">
+    <a href="/news/amp/" class="btn">Xem Tất Cả Tin Tức</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="container">
+  <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Dịch Vụ Của Chúng Tôi</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>Taxi Trong Thành Phố</h3>
+      <p>Phục vụ di chuyển trong nội thành Hải Phòng với giá cả hợp lý, tài xế thân thiện và xe sạch sẽ.</p>
+    </div>
+
+    <div class="card">
+      <h3>Taxi Liên Tỉnh</h3>
+      <p>Dịch vụ đưa đón đi các tỉnh lân cận như Huế, Đà Nẵng, Vinh với mức giá cạnh tranh.</p>
+    </div>
+
+    <div class="card">
+      <h3>Taxi Sân Bay</h3>
+      <p>Chuyên đưa đón sân bay Phú Bài, đảm bảo đúng giờ và an toàn cho chuyến bay của bạn.</p>
+    </div>
+
+    <div class="card">
+      <h3>Taxi Du Lịch</h3>
+      <p>Thuê xe theo ngày để tham quan các điểm du lịch nổi tiếng tại Quảng Trị và lân cận.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Fleet Section -->
+<section class="container">
+  <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Đội Xe Của Chúng Tôi</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <amp-img src="/xe1.jpg" alt="Taxi 4 chỗ" width="300" height="200" layout="responsive"></amp-img>
+      </div>
+      <h3 style="text-align: center;">Taxi 4 Chỗ</h3>
+      <div style="text-align: center; margin: 1rem 0;">
+        <strong style="color: #e74c3c; font-size: 1.2rem;">15,000 VNĐ/km</strong>
+      </div>
+      <ul style="list-style: none; padding: 0;">
+        <li>✓ Xe đời mới, máy lạnh</li>
+        <li>✓ Tài xế kinh nghiệm</li>
+        <li>✓ Giá cả hợp lý</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <amp-img src="/xe2.jpg" alt="Taxi 7 chỗ" width="300" height="200" layout="responsive"></amp-img>
+      </div>
+      <h3 style="text-align: center;">Taxi 7 Chỗ</h3>
+      <div style="text-align: center; margin: 1rem 0;">
+        <strong style="color: #e74c3c; font-size: 1.2rem;">18,000 VNĐ/km</strong>
+      </div>
+      <ul style="list-style: none; padding: 0;">
+        <li>✓ Rộng rãi, thoải mái</li>
+        <li>✓ Phù hợp gia đình</li>
+        <li>✓ An toàn tuyệt đối</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <amp-img src="/xe3.jpg" alt="Taxi 16 chỗ" width="300" height="200" layout="responsive"></amp-img>
+      </div>
+      <h3 style="text-align: center;">Taxi 16 Chỗ</h3>
+      <div style="text-align: center; margin: 1rem 0;">
+        <strong style="color: #e74c3c; font-size: 1.2rem;">Theo thỏa thuận</strong>
+      </div>
+      <ul style="list-style: none; padding: 0;">
+        <li>✓ Phù hợp nhóm đông</li>
+        <li>✓ Du lịch, sự kiện</li>
+        <li>✓ Giá ưu đãi nhóm</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="container">
+  <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Liên Hệ Với Chúng Tôi</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>Thông Tin Liên Hệ</h3>
+      <div class="contact-item">
+        <strong>📞 Hotline:</strong> {{ site.Params.phone }}
+      </div>
+      <div class="contact-item">
+        <strong>✉️ Email:</strong> {{ site.Params.email }}
+      </div>
+      <div class="contact-item">
+        <strong>📍 Địa chỉ:</strong> {{ site.Params.address }}
+      </div>
+      <div class="contact-item">
+        <strong>🕒 Giờ hoạt động:</strong> 24/7 - Phục vụ liên tục
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="tel:{{ site.Params.phone }}" class="btn">Gọi Ngay</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h3>Khu Vực Phục Vụ</h3>
+      <div class="contact-item">
+        <strong>🏙️ Nội thành:</strong> Toàn bộ thành phố Hải Phòng
+      </div>
+      <div class="contact-item">
+        <strong>🌆 Liên tỉnh:</strong> Huế, Đà Nẵng, Vinh, Hà Nội
+      </div>
+      <div class="contact-item">
+        <strong>✈️ Sân bay:</strong> Sân bay Phú Bài (Huế)
+      </div>
+      <div class="contact-item">
+        <strong>🏛️ Du lịch:</strong> DMZ, Vinh Mốc, Khe Sanh
+      </div>
+      <div class="contact-item">
+        <strong>📍 Phạm vi:</strong> Toàn tỉnh Quảng Trị và lân cận
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

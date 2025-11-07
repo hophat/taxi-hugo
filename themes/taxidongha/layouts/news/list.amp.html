@@ -1,0 +1,63 @@
+{{ define "main" }}
+<div class="container">
+  <div style="text-align: center; margin-bottom: 3rem; padding: 2rem 0; border-bottom: 1px solid #e1e5e9;">
+    <h1 style="color: #2c3e50; margin-bottom: 1rem;">{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+  </div>
+
+  <div class="grid grid-2">
+    {{ range .Pages }}
+    <article class="card">
+      <div class="news-meta">
+        <time>{{ .Date.Format "02/01/2006" }}</time>
+        <span class="news-category">Tin Tức</span>
+      </div>
+      
+      <h2 style="margin-bottom: 1rem;">
+        <a href="{{ .RelPermalink }}amp/" style="color: #2c3e50; text-decoration: none; font-size: 1.3rem; font-weight: 600; line-height: 1.4;">
+          {{ .Title }}
+        </a>
+      </h2>
+      
+      <div style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
+        {{ if .Summary }}
+          {{ .Summary | truncate 150 }}
+        {{ else }}
+          {{ .Content | truncate 150 }}
+        {{ end }}
+      </div>
+      
+      <div>
+        <a href="{{ .RelPermalink }}amp/" class="btn btn-outline">Đọc Thêm</a>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+
+  {{ if eq (len .Pages) 0 }}
+  <div style="text-align: center; padding: 4rem 2rem; color: #666;">
+    <h3>Chưa có tin tức nào</h3>
+    <p>Hãy quay lại sau để cập nhật những tin tức mới nhất từ Taxi Hải Phòng.</p>
+    <div style="margin-top: 2rem;">
+      <a href="/amp/" class="btn">Về Trang Chủ</a>
+    </div>
+  </div>
+  {{ end }}
+
+  <!-- Contact CTA -->
+  <section class="card" style="margin-top: 3rem; text-align: center; background: linear-gradient(135deg, #27ae60, #2ecc71);">
+    <h3 style="color: white; margin-bottom: 1rem;">Cần Đặt Xe Taxi?</h3>
+    <p style="color: white; margin-bottom: 2rem; opacity: 0.9;">
+      Liên hệ ngay với Taxi Hải Phòng để được phục vụ tốt nhất
+    </p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="tel:{{ site.Params.phone }}" class="btn" style="background: white; color: #27ae60;">
+        📞 Gọi Ngay: {{ site.Params.phone }}
+      </a>
+      <a href="/amp/" class="btn btn-outline" style="border-color: white; color: white;">
+        🏠 Về Trang Chủ
+      </a>
+    </div>
+  </section>
+</div>
+{{ end }}

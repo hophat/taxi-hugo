@@ -1,0 +1,96 @@
+{{ define "main" }}
+<div class="container">
+  <!-- Page Header -->
+  <div style="text-align: center; margin: 2rem 0;">
+    <h1 style="color: #2c3e50; font-size: 2.5rem; margin-bottom: 1rem;">{{ .Title }}</h1>
+    <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto;">{{ .Description }}</p>
+  </div>
+
+  <!-- Fleet Grid -->
+  <div class="services-grid" style="margin: 3rem 0;">
+    <!-- Xe 4 Chỗ -->
+    <div class="service-card">
+      <img src="/xe1.jpg" alt="Xe 4 chỗ" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+      <h3 style="color: #2c3e50; margin-bottom: 1rem;">Xe 4 Chỗ</h3>
+      <div style="text-align: left; color: #555; line-height: 1.8;">
+        <p><strong>Loại xe:</strong> Toyota Vios, Hyundai Accent</p>
+        <p><strong>Phù hợp:</strong> Gia đình nhỏ, cá nhân</p>
+        <p><strong>Ưu điểm:</strong> Tiết kiệm nhiên liệu</p>
+        <p style="font-size: 1.2rem; font-weight: bold; color: #e74c3c;">Giá: 15,000đ/km</p>
+      </div>
+      <a href="tel:{{ site.Params.phone }}" class="btn" style="margin-top: 1rem; display: inline-block;">Đặt Xe</a>
+    </div>
+
+    <!-- Xe 7 Chỗ -->
+    <div class="service-card">
+      <img src="/xe2.jpg" alt="Xe 7 chỗ" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+      <h3 style="color: #2c3e50; margin-bottom: 1rem;">Xe 7 Chỗ</h3>
+      <div style="text-align: left; color: #555; line-height: 1.8;">
+        <p><strong>Loại xe:</strong> Toyota Innova, Mitsubishi Xpander</p>
+        <p><strong>Phù hợp:</strong> Nhóm đông người</p>
+        <p><strong>Ưu điểm:</strong> Hành lý rộng rãi</p>
+        <p style="font-size: 1.2rem; font-weight: bold; color: #e74c3c;">Giá: 18,000đ/km</p>
+      </div>
+      <a href="tel:{{ site.Params.phone }}" class="btn" style="margin-top: 1rem; display: inline-block;">Đặt Xe</a>
+    </div>
+
+    <!-- Xe 16 Chỗ -->
+    <div class="service-card">
+      <img src="/xe3.jpg" alt="Xe 16 chỗ" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+      <h3 style="color: #2c3e50; margin-bottom: 1rem;">Xe 16 Chỗ</h3>
+      <div style="text-align: left; color: #555; line-height: 1.8;">
+        <p><strong>Loại xe:</strong> Ford Transit, Hyundai Solati</p>
+        <p><strong>Phù hợp:</strong> Đoàn du lịch</p>
+        <p><strong>Ưu điểm:</strong> Thoải mái cho chuyến dài</p>
+        <p style="font-size: 1.2rem; font-weight: bold; color: #e74c3c;">Giá: Thỏa thuận</p>
+      </div>
+      <a href="tel:{{ site.Params.phone }}" class="btn" style="margin-top: 1rem; display: inline-block;">Đặt Xe</a>
+    </div>
+  </div>
+
+  <!-- Cam Kết Chất Lượng -->
+  <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 3rem 0;">
+    <h2 style="text-align: center; color: #2c3e50; margin-bottom: 2rem;">✅ Cam Kết Chất Lượng</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+      <div style="text-align: center; padding: 1rem;">
+        <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">Bảo Dưỡng Định Kỳ</h4>
+        <p style="color: #666;">Xe được kiểm tra và bảo dưỡng thường xuyên</p>
+      </div>
+      <div style="text-align: center; padding: 1rem;">
+        <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">Nội Thất Sạch Sẽ</h4>
+        <p style="color: #666;">Vệ sinh xe sau mỗi chuyến đi</p>
+      </div>
+      <div style="text-align: center; padding: 1rem;">
+        <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">Điều Hòa Mát</h4>
+        <p style="color: #666;">Tất cả xe đều có điều hòa, nhạc thư giãn</p>
+      </div>
+      <div style="text-align: center; padding: 1rem;">
+        <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">Tài Xế Chuyên Nghiệp</h4>
+        <p style="color: #666;">Lịch sự, am hiểu đường xá địa phương</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hướng Dẫn Đặt Xe -->
+  <div style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 3rem 2rem; border-radius: 8px; margin: 3rem 0;">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Đặt Xe Dễ Dàng</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+      <div>
+        <h4 style="margin-bottom: 0.5rem;">Gọi Điện</h4>
+        <p>{{ site.Params.phone }}</p>
+      </div>
+      <div>
+        <h4 style="margin-bottom: 0.5rem;">Zalo/Messenger</h4>
+        <p>Nhắn tin với thông tin đặt xe</p>
+      </div>
+      <div>
+        <h4 style="margin-bottom: 0.5rem;">Thông Báo Trước</h4>
+        <p>Đón xe sau 5-10 phút</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="tel:{{ site.Params.phone }}" class="btn" style="background: #e74c3c; font-size: 1.1rem;">Gọi Ngay: {{ site.Params.phone }}</a>
+    </div>
+  </div>
+</div>
+{{ end }}

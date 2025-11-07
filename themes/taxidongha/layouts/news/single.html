@@ -1,0 +1,55 @@
+{{ define "main" }}
+<div class="container">
+  <article class="news-article">
+    <header class="article-header">
+      <div class="article-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time>
+        <span class="article-category">Tin Tức</span>
+      </div>
+      
+      <h1 class="article-title">{{ .Title }}</h1>
+      
+      {{ if .Params.summary }}
+      <div class="article-summary">
+        {{ .Params.summary }}
+      </div>
+      {{ end }}
+    </header>
+
+    <div class="article-content">
+      {{ .Content }}
+    </div>
+
+    <footer class="article-footer">
+      <div class="article-actions">
+        <a href="/news/" class="btn btn-outline">← Quay Lại Tin Tức</a>
+        <a href="tel:{{ site.Params.phone }}" class="btn btn-primary">Gọi Taxi Ngay</a>
+      </div>
+      
+      <div class="article-share">
+        <h4>Chia sẻ bài viết</h4>
+        <div class="share-buttons">
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" class="share-btn facebook">Facebook</a>
+          <a href="https://zalo.me/share?url={{ .Permalink }}" target="_blank" class="share-btn zalo">Zalo</a>
+        </div>
+      </div>
+    </footer>
+  </article>
+
+  <!-- Related News -->
+  {{ $related := .Site.RegularPages.Related . | first 3 }}
+  {{ if $related }}
+  <section class="related-news">
+    <h3>Tin Tức Liên Quan</h3>
+    <div class="related-grid">
+      {{ range $related }}
+      <article class="related-item">
+        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <time>{{ .Date.Format "02/01/2006" }}</time>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</div>
+{{ end }}

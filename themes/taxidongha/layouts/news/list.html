@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="container">
+  <div class="page-header">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+  </div>
+
+  <div class="news-grid">
+    {{ range .Pages }}
+    <article class="news-card">
+      <div class="news-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time>
+        <span class="news-category">Tin Tức</span>
+      </div>
+      
+      <h2 class="news-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+      
+      <div class="news-summary">
+        {{ if .Summary }}
+          {{ .Summary }}
+        {{ else }}
+          {{ .Content | truncate 150 }}
+        {{ end }}
+      </div>
+      
+      <div class="news-actions">
+        <a href="{{ .Permalink }}" class="btn btn-outline">Đọc Thêm</a>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+
+  {{ if eq (len .Pages) 0 }}
+  <div class="no-news">
+    <h3>Chưa có tin tức nào</h3>
+    <p>Hãy quay lại sau để cập nhật những tin tức mới nhất từ Taxi Hải Phòng.</p>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

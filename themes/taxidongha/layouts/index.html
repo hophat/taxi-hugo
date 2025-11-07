@@ -1,0 +1,278 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero-fullscreen">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-split-container">
+      <!-- Left Content -->
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-text">Dịch Vụ Taxi Chuyên Nghiệp</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="hero-title-main">TAXI HẢI PHÒNG</span>
+          <span class="hero-title-sub">Uy Tín • An Toàn • Chuyên Nghiệp</span>
+        </h1>
+        
+        <p class="hero-description">
+          Phục vụ 24/7 với đội xe hiện đại, tài xế kinh nghiệm và cam kết mang đến 
+          trải nghiệm di chuyển tốt nhất tại Hải Phòng
+        </p>
+        
+        <div class="hero-actions">
+          <a href="tel:{{ site.Params.phone }}" class="btn-hero btn-primary">
+            <span class="btn-icon">📞</span>
+            <span class="btn-text">
+              <strong>Gọi Ngay</strong>
+              <small>{{ site.Params.phone }}</small>
+            </span>
+          </a>
+          
+          <a href="https://zalo.me/{{ site.Params.phone }}" target="_blank" class="btn-hero btn-secondary">
+            <span class="btn-icon">
+              <img src="/zalo.png" alt="Zalo" class="zalo-icon-hero">
+            </span>
+            <span class="btn-text">
+              <strong>Chat Zalo</strong>
+              <small>Phản hồi nhanh</small>
+            </span>
+          </a>
+        </div>
+        
+        <div class="hero-features">
+          <div class="feature-item">
+            <div class="feature-text">
+              <strong>Đội xe đa dạng</strong>
+              <span>4-16 chỗ ngồi</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-text">
+              <strong>Phục vụ 24/7</strong>
+              <span>Sẵn sàng mọi lúc</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-text">
+              <strong>Giá cả hợp lý</strong>
+              <span>Minh bạch, công khai</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Image -->
+      <div class="hero-right">
+        <div class="hero-image-container">
+          <img src="/banner02.webp" alt="Taxi Hải Phòng - Đội xe chuyên nghiệp" class="hero-banner-image">
+          <div class="hero-image-overlay">
+            <div class="image-badge">
+              <span>Đội xe hiện đại</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero-scroll-indicator">
+    <div class="scroll-arrow"></div>
+    <span class="scroll-text">Cuộn xuống để xem thêm</span>
+  </div>
+</section>
+
+<!-- Booking Form & Map Section -->
+<section class="container">
+  <div class="booking-map-container">
+    <!-- Form Column -->
+    <div class="booking-form-container">
+      <h2>Đặt Xe Nhanh</h2>
+      <p>Nhập thông tin để chúng tôi liên hệ và báo giá cho bạn</p>
+      
+      <form class="booking-form" action="#" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pickup-address">Địa chỉ đón</label>
+            <input type="text" id="pickup-address" name="pickup_address" placeholder="Nhập địa chỉ đón xe..." required>
+          </div>
+          <div class="form-group">
+            <label for="dropoff-address">Địa chỉ thả</label>
+            <input type="text" id="dropoff-address" name="dropoff_address" placeholder="Nhập địa chỉ đến..." required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone-number">Số điện thoại</label>
+            <input type="tel" id="phone-number" name="phone" placeholder="Nhập số điện thoại..." required>
+          </div>
+          <div class="form-group">
+            <label for="passenger-count">Số hành khách</label>
+            <select id="passenger-count" name="passengers" required>
+              <option value="">Chọn số người</option>
+              <option value="1-4">1-4 người (Xe 4 chỗ)</option>
+              <option value="5-7">5-7 người (Xe 7 chỗ)</option>
+              <option value="8-16">8-16 người (Xe 16 chỗ)</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="notes">Ghi chú (tùy chọn)</label>
+            <textarea id="notes" name="notes" placeholder="Thời gian đón, yêu cầu đặc biệt..." rows="3"></textarea>
+          </div>
+        </div>
+        
+        <div class="form-actions">
+          <a href="https://zalo.me/{{ site.Params.phone }}" target="_blank" class="btn btn-primary zalo-btn">
+            <img src="/zalo.png" alt="Zalo" class="zalo-icon">
+            Gửi Yêu Cầu Qua Zalo
+          </a>
+          <p class="form-note">Chúng tôi sẽ phản hồi qua Zalo trong vài phút</p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Map Column -->
+    <div class="map-section">
+      <h3>Vị Trí Của Chúng Tôi</h3>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.8947234567!2d107.0947234567!3d16.8194567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ5JzEwLjAiTiAxMDfCsDA1JzQxLjAiRQ!5e0!3m2!1svi!2s!4v1699999999999!5m2!1svi!2s"
+          width="100%" 
+          height="400" 
+          style="border:0; border-radius: 8px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Vị trí Taxi Hải Phòng">
+        </iframe>
+      </div>
+      
+      <div class="location-info">
+        <div class="info-item">
+          <h4>Địa Chỉ</h4>
+          <p>{{ site.Params.address }}</p>
+        </div>
+        <div class="info-item">
+          <h4>Khu Vực Phục Vụ</h4>
+          <p>Toàn thành phố Hải Phòng và các quận, huyện lân cận</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Latest News Section -->
+<section class="container">
+  <h2>Tin Tức Mới Nhất</h2>
+  <div class="news-grid">
+    {{ range first 3 (where site.RegularPages "Section" "news") }}
+    <article class="news-card">
+      <div class="news-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time>
+        <span class="news-category">Tin Tức</span>
+      </div>
+      
+      <h3 class="news-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h3>
+      
+      <div class="news-summary">
+        {{ if .Summary }}
+          {{ .Summary | truncate 120 }}
+        {{ else }}
+          {{ .Content | truncate 120 }}
+        {{ end }}
+      </div>
+      
+      <div class="news-actions">
+        <a href="{{ .Permalink }}" class="btn btn-outline">Đọc Thêm</a>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  
+  <div style="text-align: center; margin-top: 2rem;">
+    <a href="/news/" class="btn btn-primary">Xem Tất Cả Tin Tức</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="container">
+  <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Dịch Vụ Của Chúng Tôi</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Taxi Trong Thành Phố</h3>
+      <p>Phục vụ di chuyển trong nội thành Hải Phòng với giá cả hợp lý, tài xế thân thiện và xe sạch sẽ.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Phục Vụ 24/7</h3>
+      <p>Hoạt động 24 giờ trong ngày, 7 ngày trong tuần. Sẵn sàng phục vụ bạn bất cứ lúc nào.</p>
+    </div>
+    <div class="service-card">
+      <h3>Giá Cả Hợp Lý</h3>
+      <p>Bảng giá minh bạch, không phát sinh chi phí ẩn. Thanh toán tiền mặt hoặc chuyển khoản.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Fleet Section -->
+<section class="container">
+  <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Đội Xe Của Chúng Tôi</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="/xe1.jpg" alt="Xe 4 chỗ" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+      <h3 style="color: #2c3e50; margin-bottom: 1rem;">Xe 4 Chỗ</h3>
+      <p style="color: #555; margin-bottom: 1rem;">Toyota Vios, Hyundai Accent - Phù hợp cho gia đình nhỏ, tiết kiệm nhiên liệu.</p>
+      <p style="font-size: 1.1rem; font-weight: bold; color: #e74c3c;">Giá: 15,000đ/km</p>
+    </div>
+    <div class="service-card">
+      <img src="/xe2.jpg" alt="Xe 7 chỗ" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+      <h3 style="color: #2c3e50; margin-bottom: 1rem;">Xe 7 Chỗ</h3>
+      <p style="color: #555; margin-bottom: 1rem;">Toyota Innova, Mitsubishi Xpander - Phù hợp cho nhóm đông người, hành lý rộng rãi.</p>
+      <p style="font-size: 1.1rem; font-weight: bold; color: #e74c3c;">Giá: 18,000đ/km</p>
+    </div>
+    <div class="service-card">
+      <img src="/xe3.jpg" alt="Xe 16 chỗ" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+      <h3 style="color: #2c3e50; margin-bottom: 1rem;">Xe 16 Chỗ</h3>
+      <p style="color: #555; margin-bottom: 1rem;">Ford Transit, Hyundai Solati - Phù hợp cho đoàn du lịch, thoải mái cho chuyến dài.</p>
+      <p style="font-size: 1.1rem; font-weight: bold; color: #e74c3c;">Giá: Thỏa thuận</p>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 2rem;">
+    <a href="/fleet/" class="btn">Xem Chi Tiết Đội Xe</a>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="container">
+  <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Liên Hệ Với Chúng Tôi</h2>
+  <div class="contact-info">
+    <div class="contact-item">
+      <div>
+        <strong>Hotline:</strong> {{ site.Params.phone }}
+      </div>
+    </div>
+    <div class="contact-item">
+      <div>
+        <strong>Email:</strong> {{ site.Params.email }}
+      </div>
+    </div>
+    <div class="contact-item">
+      <div>
+        <strong>Địa chỉ:</strong> {{ site.Params.address }}
+      </div>
+    </div>
+    <div class="contact-item">
+      <div>
+        <strong>Thời gian phục vụ:</strong> 24/7 - Tất cả các ngày trong tuần
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
