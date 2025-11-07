@@ -1,0 +1,50 @@
+<!-- Partial template cho grid dịch vụ sử dụng data files -->
+<div class="services-grid">
+  {{ range site.Data.services.services }}
+  <div class="service-card">
+    <div class="service-icon">{{ .icon }}</div>
+    <h3>{{ .name }}</h3>
+    <p>{{ .description }}</p>
+    <div class="service-price">
+      <strong>{{ .price }}</strong>
+    </div>
+    <a href="tel:{{ site.Data.contact.contact.phone }}" class="btn btn-primary">
+      Đặt Xe Ngay
+    </a>
+  </div>
+  {{ end }}
+</div>
+
+<!-- Khu vực phục vụ -->
+<div class="service-areas">
+  <h3>🗺️ Khu Vực Phục Vụ</h3>
+  
+  <div class="area-grid">
+    <div class="area-section">
+      <h4>Nội Thành</h4>
+      <ul>
+        {{ range site.Data.services.service_areas.local }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    
+    <div class="area-section">
+      <h4>Liên Tỉnh</h4>
+      <ul>
+        {{ range site.Data.services.service_areas.inter_province }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    
+    <div class="area-section">
+      <h4>Sân Bay</h4>
+      <ul>
+        {{ range site.Data.services.service_areas.airports }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>

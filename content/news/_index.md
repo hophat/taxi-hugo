@@ -1,8 +1,8 @@
 ---
 title: "Tin Tức"
-description: "Tin tức mới nhất về dịch vụ taxi Hà Tĩnh và giao thông tại Hà Tĩnh"
+description: "Tin tức mới nhất về dịch vụ taxi Bắc Ninh và giao thông tại Bắc Ninh"
 ---
 
-# Tin Tức Taxi Hà Tĩnh
+# Tin Tức Taxi Bắc Ninh
 
-Cập nhật những tin tức mới nhất về dịch vụ taxi, giao thông và các hoạt động của Taxi Hà Tĩnh.
+Cập nhật những tin tức mới nhất về dịch vụ taxi, giao thông và các hoạt động của Taxi Bắc Ninh.

@@ -1,0 +1,33 @@
+# Cấu hình hình ảnh website
+logo:
+  main: "/favicon.ico"
+  alt: "Taxi Bắc Ninh Logo"
+
+# Banner và hình ảnh chính
+banners:
+  hero: "/banner02.webp"
+  hero_alt: "Taxi Bắc Ninh - Đội xe chuyên nghiệp"
+  main: "/banner01.jpg"
+  main_alt: "Dịch vụ taxi Bắc Ninh"
+  vungtau: "/banner-vungtau.jpg"
+  vungtau_alt: "Taxi Bắc Ninh phục vụ tận nơi"
+
+# Hình ảnh đội xe
+fleet:
+  car_4_seats: "/xe1.jpg"
+  car_4_seats_alt: "Xe taxi 4 chỗ"
+  car_7_seats: "/xe2.jpg" 
+  car_7_seats_alt: "Xe taxi 7 chỗ"
+  car_16_seats: "/xe3.jpg"
+  car_16_seats_alt: "Xe taxi 16 chỗ"
+
+# Icon và biểu tượng
+icons:
+  zalo: "/zalo.png"
+  zalo_alt: "Zalo"
+  favicon: "/favicon.ico"
+
+# Hình ảnh SEO mặc định
+seo:
+  default_image: "/banner01.jpg"
+  og_image: "/banner01.jpg"

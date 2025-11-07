@@ -1,0 +1,53 @@
+# Cấu hình dịch vụ taxi
+services:
+  - name: "Taxi Trong Thành Phố"
+    description: "Phục vụ di chuyển trong nội thành Bắc Ninh với giá cả hợp lý, tài xế thân thiện và xe sạch sẽ."
+    price: "15,000đ/km"
+    icon: "🚕"
+
+  - name: "Taxi Liên Tỉnh"
+    description: "Đưa đón sân bay Vinh, di chuyển đến Nghệ An, Quảng Bình với mức giá cạnh tranh."
+    price: "Từ 300,000đ"
+    icon: "🚗"
+
+  - name: "Phục Vụ 24/7"
+    description: "Hoạt động 24 giờ trong ngày, 7 ngày trong tuần. Sẵn sàng phục vụ bạn bất cứ lúc nào."
+    price: "Luôn sẵn sàng"
+    icon: "🕐"
+
+# Khu vực phục vụ
+service_areas:
+  local:
+    - "Nội thành Bắc Ninh"
+    - "Các huyện trong Bắc Ninh"
+  
+  inter_province:
+    - "Nghệ An"
+    - "Quảng Bình" 
+    - "Vinh"
+    - "Hà Nội"
+  
+  airports:
+    - "Sân bay Vinh"
+  
+  tourist:
+    - "Các điểm du lịch trong tỉnh"
+    - "Khu vực lân cận"
+
+# Bảng giá tham khảo
+pricing:
+  city:
+    name: "Trong Thành Phố"
+    price: "15,000đ/km"
+  
+  airport_vinh:
+    name: "Sân Bay Vinh"
+    price: "280,000đ"
+  
+  nghe_an:
+    name: "Đi Nghệ An"
+    price: "180,000đ"
+  
+  quang_binh:
+    name: "Đi Quảng Bình"
+    price: "220,000đ"

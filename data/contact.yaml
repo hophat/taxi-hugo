@@ -1,0 +1,37 @@
+# Thông tin liên hệ chính
+company:
+  name: "Taxi Bắc Ninh"
+  full_name: "Taxi Bắc Ninh - Dịch Vụ Taxi Uy Tín"
+  slogan: "Uy Tín • An Toàn • Chuyên Nghiệp"
+  description: "Dịch vụ taxi uy tín tại Bắc Ninh. Phục vụ 24/7 với giá cả hợp lý."
+
+# Thông tin liên hệ
+contact:
+  phone: "0989511431"
+  email: "info@sotaxihatinh.io.vn"
+  website: "http://sotaxihatinh.io.vn/"
+  
+# Địa chỉ
+address:
+  street: "Bắc Ninh"
+  city: "Bắc Ninh"
+  province: "Bắc Ninh"
+  country: "Việt Nam"
+  full_address: "Bắc Ninh, Việt Nam"
+  postal_code: "45000"
+
+# Tọa độ GPS
+coordinates:
+  latitude: "18.3402"
+  longitude: "105.9005"
+
+# Mạng xã hội
+social:
+  facebook: "https://facebook.com/sotaxihatinh"
+  zalo: "https://zalo.me/sotaxihatinh"
+  zalo_phone: "https://zalo.me/0989511431"
+
+# Giờ hoạt động
+hours:
+  open: "24/7"
+  description: "Phục vụ 24 giờ trong ngày, 7 ngày trong tuần"

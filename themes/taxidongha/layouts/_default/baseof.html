@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
-  <meta name="keywords" content="{{ if .Params.keywords }}{{ .Params.keywords }}{{ else }}{{ site.Params.keywords }}{{ end }}">
-  <meta name="author" content="{{ site.Params.author }}">
+  <title>{{ if .IsHome }}{{ site.Data.seo.meta.title }}{{ else }}{{ .Title }} - {{ site.Data.contact.company.name }}{{ end }}</title>
+  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Data.seo.meta.description }}{{ end }}">
+  <meta name="keywords" content="{{ if .Params.keywords }}{{ .Params.keywords }}{{ else }}{{ site.Data.seo.meta.keywords }}{{ end }}">
+  <meta name="author" content="{{ site.Data.seo.meta.author }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="amphtml" href="{{ .Permalink }}amp/">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="{{ site.Data.images.icons.favicon }}">
   
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VY84JEVZS3"></script>
@@ -24,10 +24,10 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="{{ if .IsHome }}website{{ else if eq .Section "news" }}article{{ else }}website{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
-  <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
-  <meta property="og:image" content="{{ site.BaseURL }}{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ site.Params.image }}{{ end }}">
-  <meta property="og:site_name" content="{{ site.Params.business_name }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ site.Data.seo.og.site_name }}{{ else }}{{ .Title }} - {{ site.Data.contact.company.name }}{{ end }}">
+  <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Data.seo.meta.description }}{{ end }}">
+  <meta property="og:image" content="{{ site.BaseURL }}{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ site.Data.seo.og.image }}{{ end }}">
+  <meta property="og:site_name" content="{{ site.Data.contact.company.name }}">
   <meta property="og:locale" content="vi_VN">
   {{ if eq .Section "news" }}
   <meta property="article:author" content="{{ site.Params.author }}">
@@ -38,14 +38,14 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="{{ .Permalink }}">
-  <meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
-  <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
-  <meta name="twitter:image" content="{{ site.BaseURL }}{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ site.Params.image }}{{ end }}">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ site.Data.contact.company.full_name }}{{ else }}{{ .Title }} - {{ site.Data.contact.company.name }}{{ end }}">
+  <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Data.seo.meta.description }}{{ end }}">
+  <meta name="twitter:image" content="{{ site.BaseURL }}{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ site.Data.seo.og.image }}{{ end }}">
   
   <!-- Zalo -->
-  <meta property="zalo:image" content="{{ site.BaseURL }}{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ site.Params.image }}{{ end }}">
-  <meta property="zalo:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
-  <meta property="zalo:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta property="zalo:image" content="{{ site.BaseURL }}{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ site.Data.seo.zalo.image }}{{ end }}">
+  <meta property="zalo:title" content="{{ if .IsHome }}{{ site.Data.seo.zalo.title }}{{ else }}{{ .Title }} - {{ site.Data.contact.company.name }}{{ end }}">
+  <meta property="zalo:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Data.seo.zalo.description }}{{ end }}">
   
   <!-- Google Fonts - Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,26 +59,26 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "{{ site.BaseURL }}#business",
-    "name": "{{ site.Params.business_name }}",
-    "alternateName": "{{ site.Title }}",
-    "description": "{{ site.Params.description }}",
-    "url": "{{ site.BaseURL }}",
-    "logo": "{{ site.BaseURL }}{{ site.Params.logo }}",
-    "image": "{{ site.BaseURL }}{{ site.Params.image }}",
-    "telephone": "{{ site.Params.phone }}",
-    "email": "{{ site.Params.email }}",
+    "name": "{{ site.Data.contact.company.name }}",
+    "alternateName": "{{ site.Data.contact.company.full_name }}",
+    "description": "{{ site.Data.contact.company.description }}",
+    "url": "{{ site.Data.contact.contact.website }}",
+    "logo": "{{ site.BaseURL }}{{ site.Data.images.logo.main }}",
+    "image": "{{ site.BaseURL }}{{ site.Data.images.seo.default_image }}",
+    "telephone": "{{ site.Data.contact.contact.phone }}",
+    "email": "{{ site.Data.contact.contact.email }}",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "{{ site.Params.address }}",
-      "addressLocality": "Hà Tĩnh",
-      "addressRegion": "{{ site.Params.region }}",
-      "postalCode": "{{ site.Params.postal_code }}",
-      "addressCountry": "{{ site.Params.country }}"
+      "streetAddress": "{{ site.Data.contact.address.full_address }}",
+      "addressLocality": "{{ site.Data.contact.address.city }}",
+      "addressRegion": "{{ site.Data.contact.address.province }}",
+      "postalCode": "{{ site.Data.contact.address.postal_code }}",
+      "addressCountry": "{{ site.Data.contact.address.country }}"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": {{ site.Params.latitude }},
-      "longitude": {{ site.Params.longitude }}
+      "latitude": {{ site.Data.contact.coordinates.latitude }},
+      "longitude": {{ site.Data.contact.coordinates.longitude }}
     },
     "openingHours": "Mo-Su 00:00-23:59",
     "priceRange": "$$",
@@ -86,8 +86,8 @@
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": {{ site.Params.latitude }},
-        "longitude": {{ site.Params.longitude }}
+        "latitude": {{ site.Data.contact.coordinates.latitude }},
+        "longitude": {{ site.Data.contact.coordinates.longitude }}
       },
       "geoRadius": "50000"
     },
@@ -95,35 +95,22 @@
       "@type": "OfferCatalog",
       "name": "Dịch Vụ Taxi",
       "itemListElement": [
+        {{ range $index, $service := site.Data.services.services }}
+        {{ if $index }},{{ end }}
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Taxi Trong Thành Phố",
-            "description": "Dịch vụ taxi di chuyển trong nội thành Hà Tĩnh"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Taxi Liên Tỉnh",
-            "description": "Dịch vụ taxi đi các tỉnh lân cận"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Taxi Sân Bay",
-            "description": "Dịch vụ đưa đón sân bay"
+            "name": "{{ $service.name }}",
+            "description": "{{ $service.description }}"
           }
         }
+        {{ end }}
       ]
     },
     "sameAs": [
-      "{{ site.Params.facebook }}",
-      "{{ site.Params.zalo }}"
+      "{{ site.Data.contact.social.facebook }}",
+      "{{ site.Data.contact.social.zalo }}"
     ]
   }
   </script>
@@ -1907,7 +1894,7 @@
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <img src="/favicon.ico" alt="Taxi Hà Tĩnh">
+          <img src="{{ site.Data.images.logo.main }}" alt="{{ site.Data.images.logo.alt }}">
         </div>
         <nav>
           <ul>
@@ -1936,13 +1923,13 @@
   </div>
 
   <!-- Float Call Button -->
-  <a href="tel:{{ site.Params.phone }}" class="float-call-btn" title="Gọi ngay {{ site.Params.phone }}">
+  <a href="tel:{{ site.Data.contact.contact.phone }}" class="float-call-btn" title="Gọi ngay {{ site.Data.contact.contact.phone }}">
     📞
   </a>
 
   <!-- Float Zalo Button -->
-  <a href="https://zalo.me/{{ site.Params.phone }}" target="_blank" class="float-zalo-btn" title="Chat Zalo {{ site.Params.phone }}">
-    <img src="/zalo.png" alt="Zalo" class="zalo-float-icon">
+  <a href="{{ site.Data.contact.social.zalo_phone }}" target="_blank" class="float-zalo-btn" title="Chat Zalo {{ site.Data.contact.contact.phone }}">
+    <img src="{{ site.Data.images.icons.zalo }}" alt="{{ site.Data.images.icons.zalo_alt }}" class="zalo-float-icon">
   </a>
 
   <footer>
@@ -1950,14 +1937,14 @@
       <div class="footer-content">
         <div class="footer-info">
           <div class="footer-logo">
-            <img src="/favicon.ico" alt="Taxi Hà Tĩnh Logo">
-            <h3>Taxi Hà Tĩnh</h3>
+            <img src="{{ site.Data.images.logo.main }}" alt="{{ site.Data.images.logo.alt }}">
+            <h3>{{ site.Data.contact.company.name }}</h3>
           </div>
-          <p>Dịch vụ taxi uy tín, an toàn và nhanh chóng</p>
+          <p>{{ site.Data.contact.company.description }}</p>
           <div class="footer-contact">
-            <p>📞 Hotline: {{ site.Params.phone }}</p>
-            <p>✉️ Email: {{ site.Params.email }}</p>
-            <p>📍 Địa chỉ: {{ site.Params.address }}</p>
+            <p>📞 Hotline: {{ site.Data.contact.contact.phone }}</p>
+            <p>✉️ Email: {{ site.Data.contact.contact.email }}</p>
+            <p>📍 Địa chỉ: {{ site.Data.contact.address.full_address }}</p>
           </div>
         </div>
         
@@ -1969,8 +1956,8 @@
               <ul>
                 <li><a href="http://taxibacninh.io.vn/" target="_blank">Taxi Bắc Ninh</a></li>
                 <li><a href="http://taxihungyen.io.vn/" target="_blank">Taxi Hưng Yên</a></li>
-                <li><a href="http://sotaxihatinh.io.vn/" target="_blank">Taxi Hà Tĩnh</a></li>
-                <li><a href="http://sotaxininhbinh.io.vn/" target="_blank">Taxi Hà Tĩnh</a></li>
+                <li><a href="http://sotaxihatinh.io.vn/" target="_blank">Taxi Bắc Ninh</a></li>
+                <li><a href="http://sotaxininhbinh.io.vn/" target="_blank">Taxi Bắc Ninh</a></li>
                 <li><a href="http://taxisapa.io.vn/" target="_blank">Taxi Sapa</a></li>
                 <li><a href="http://taxituyenquang.io.vn/" target="_blank">Taxi Tuyên Quang</a></li>
               </ul>
@@ -1980,7 +1967,7 @@
               <h5>Miền Trung</h5>
               <ul>
                 <li><a href="http://taxinghean.io.vn/" target="_blank">Taxi Nghệ An</a></li>
-                <li><a href="http://taxihatinh.io.vn/" target="_blank">Taxi Hà Tĩnh</a></li>
+                <li><a href="http://taxihatinh.io.vn/" target="_blank">Taxi Bắc Ninh</a></li>
                 <li><a href="http://taxiquangtri.io.vn/" target="_blank">Taxi Quảng Trị</a></li>
               </ul>
             </div>
@@ -1999,7 +1986,7 @@
       
       <div class="footer-bottom">
         <div class="footer-copyright">
-          <p>&copy; {{ now.Year }} Taxi Hà Tĩnh. Tất cả quyền được bảo lưu.</p>
+          <p>&copy; {{ now.Year }} {{ site.Data.contact.company.name }}. Tất cả quyền được bảo lưu.</p>
         </div>
         <div class="footer-credit">
           <p>Thiết kế từ: <a href="https://sotaxi.io.vn/" target="_blank">sotaxi.io.vn</a></p>

@@ -1,0 +1,33 @@
+# Cấu hình SEO và Meta Tags
+meta:
+  title: "Taxi Bắc Ninh - Dịch Vụ Taxi Uy Tín"
+  description: "Dịch vụ taxi uy tín tại Bắc Ninh. Phục vụ 24/7 với giá cả hợp lý."
+  keywords: "taxi Bắc Ninh, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi"
+  author: "Taxi Bắc Ninh"
+
+# Open Graph
+og:
+  site_name: "Taxi Bắc Ninh"
+  type: "website"
+  locale: "vi_VN"
+  image: "/banner01.jpg"
+
+# Twitter Card
+twitter:
+  card: "summary_large_image"
+  site: "@taxihatinh"
+
+# Schema.org - Structured Data
+schema:
+  business_type: "TaxiService"
+  name: "Taxi Bắc Ninh"
+  alternate_name: "Taxi Bắc Ninh - Dịch Vụ Taxi Uy Tín"
+  description: "Dịch vụ taxi uy tín tại Bắc Ninh. Phục vụ 24/7 với giá cả hợp lý."
+  opening_hours: "Mo-Su 00:00-23:59"
+  price_range: "$$"
+  
+# Zalo Meta
+zalo:
+  title: "Taxi Bắc Ninh - Dịch Vụ Taxi Uy Tín"
+  description: "Dịch vụ taxi uy tín tại Bắc Ninh. Phục vụ 24/7 với giá cả hợp lý."
+  image: "/banner01.jpg"

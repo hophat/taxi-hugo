@@ -1,0 +1,45 @@
+# Cấu hình đội xe taxi
+vehicles:
+  - type: "4_seats"
+    name: "Xe 4 Chỗ"
+    models: "Toyota Vios, Hyundai Accent"
+    description: "Phù hợp cho gia đình nhỏ, tiết kiệm nhiên liệu."
+    price: "15,000đ/km"
+    image: "/xe1.jpg"
+    capacity: "1-4 người"
+    features:
+      - "Tiết kiệm nhiên liệu"
+      - "Phù hợp gia đình nhỏ"
+      - "Giá cả hợp lý"
+
+  - type: "7_seats"
+    name: "Xe 7 Chỗ"
+    models: "Toyota Innova, Mitsubishi Xpander"
+    description: "Phù hợp cho nhóm đông người, hành lý rộng rãi."
+    price: "18,000đ/km"
+    image: "/xe2.jpg"
+    capacity: "5-7 người"
+    features:
+      - "Rộng rãi thoải mái"
+      - "Phù hợp nhóm đông"
+      - "Hành lý nhiều"
+
+  - type: "16_seats"
+    name: "Xe 16 Chỗ"
+    models: "Ford Transit, Hyundai Solati"
+    description: "Phù hợp cho đoàn du lịch, thoải mái cho chuyến dài."
+    price: "Thỏa thuận"
+    image: "/xe3.jpg"
+    capacity: "8-16 người"
+    features:
+      - "Đoàn du lịch"
+      - "Chuyến đi dài"
+      - "Thoải mái nhất"
+
+# Đặc điểm chung của đội xe
+fleet_features:
+  - "Xe hiện đại, được bảo dưỡng định kỳ"
+  - "Tài xế có kinh nghiệm, thân thiện"
+  - "Giá cả minh bạch, không phát sinh"
+  - "Phục vụ 24/7"
+  - "An toàn tuyệt đối"

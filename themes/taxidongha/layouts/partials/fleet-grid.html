@@ -1,0 +1,48 @@
+<!-- Partial template cho đội xe sử dụng data files -->
+<div class="fleet-grid">
+  {{ range site.Data.fleet.vehicles }}
+  <div class="vehicle-card">
+    <div class="vehicle-image">
+      <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
+    </div>
+    
+    <div class="vehicle-info">
+      <h3>{{ .name }}</h3>
+      <p class="vehicle-models">{{ .models }}</p>
+      <p class="vehicle-description">{{ .description }}</p>
+      
+      <div class="vehicle-details">
+        <div class="capacity">
+          <strong>👥 Sức chứa:</strong> {{ .capacity }}
+        </div>
+        <div class="price">
+          <strong>💰 Giá:</strong> {{ .price }}
+        </div>
+      </div>
+      
+      <div class="vehicle-features">
+        <h4>✨ Đặc điểm:</h4>
+        <ul>
+          {{ range .features }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      
+      <a href="tel:{{ site.Data.contact.contact.phone }}" class="btn btn-primary">
+        📞 Đặt {{ .name }}
+      </a>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+<!-- Đặc điểm chung của đội xe -->
+<div class="fleet-features">
+  <h3>🚗 Đặc Điểm Đội Xe</h3>
+  <ul class="features-list">
+    {{ range site.Data.fleet.fleet_features }}
+    <li>✅ {{ . }}</li>
+    {{ end }}
+  </ul>
+</div>

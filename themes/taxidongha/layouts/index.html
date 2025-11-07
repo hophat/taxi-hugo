@@ -11,27 +11,26 @@
         </div>
         
         <h1 class="hero-title">
-          <span class="hero-title-main">TAXI HÀ TĨNH</span>
-          <span class="hero-title-sub">Uy Tín • An Toàn • Chuyên Nghiệp</span>
+          <span class="hero-title-main">{{ upper site.Data.contact.company.name }}</span>
+          <span class="hero-title-sub">{{ site.Data.contact.company.slogan }}</span>
         </h1>
         
         <p class="hero-description">
-          Phục vụ 24/7 với đội xe hiện đại, tài xế kinh nghiệm và cam kết mang đến 
-          trải nghiệm di chuyển tốt nhất tại Hà Tĩnh
+          {{ site.Data.contact.company.description }}
         </p>
         
         <div class="hero-actions">
-          <a href="tel:{{ site.Params.phone }}" class="btn-hero btn-primary">
+          <a href="tel:{{ site.Data.contact.contact.phone }}" class="btn-hero btn-primary">
             <span class="btn-icon">📞</span>
             <span class="btn-text">
               <strong>Gọi Ngay</strong>
-              <small>{{ site.Params.phone }}</small>
+              <small>{{ site.Data.contact.contact.phone }}</small>
             </span>
           </a>
           
-          <a href="https://zalo.me/{{ site.Params.phone }}" target="_blank" class="btn-hero btn-secondary">
+          <a href="{{ site.Data.contact.social.zalo_phone }}" target="_blank" class="btn-hero btn-secondary">
             <span class="btn-icon">
-              <img src="/zalo.png" alt="Zalo" class="zalo-icon-hero">
+              <img src="{{ site.Data.images.icons.zalo }}" alt="{{ site.Data.images.icons.zalo_alt }}" class="zalo-icon-hero">
             </span>
             <span class="btn-text">
               <strong>Chat Zalo</strong>
@@ -65,7 +64,7 @@
       <!-- Right Image -->
       <div class="hero-right">
         <div class="hero-image-container">
-          <img src="/banner02.webp" alt="Taxi Hà Tĩnh - Đội xe chuyên nghiệp" class="hero-banner-image">
+          <img src="{{ site.Data.images.banners.hero }}" alt="{{ site.Data.images.banners.hero_alt }}" class="hero-banner-image">
           <div class="hero-image-overlay">
             <div class="image-badge">
               <span>Đội xe hiện đại</span>
@@ -126,8 +125,8 @@
         </div>
         
         <div class="form-actions">
-          <a href="https://zalo.me/{{ site.Params.phone }}" target="_blank" class="btn btn-primary zalo-btn">
-            <img src="/zalo.png" alt="Zalo" class="zalo-icon">
+          <a href="{{ site.Data.contact.social.zalo_phone }}" target="_blank" class="btn btn-primary zalo-btn">
+            <img src="{{ site.Data.images.icons.zalo }}" alt="{{ site.Data.images.icons.zalo_alt }}" class="zalo-icon">
             Gửi Yêu Cầu Qua Zalo
           </a>
           <p class="form-note">Chúng tôi sẽ phản hồi qua Zalo trong vài phút</p>
@@ -147,18 +146,25 @@
           allowfullscreen="" 
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade"
-          title="Vị trí Taxi Hà Tĩnh">
+          title="Vị trí {{ site.Data.contact.company.name }}">
         </iframe>
       </div>
       
       <div class="location-info">
         <div class="info-item">
           <h4>Địa Chỉ</h4>
-          <p>{{ site.Params.address }}</p>
+          <p>{{ site.Data.contact.address.full_address }}</p>
         </div>
         <div class="info-item">
           <h4>Khu Vực Phục Vụ</h4>
-          <p>Toàn tỉnh Hà Tĩnh và các huyện, thành phố lân cận</p>
+          <ul>
+            {{ range site.Data.services.service_areas.local }}
+            <li>{{ . }}</li>
+            {{ end }}
+            {{ range site.Data.services.service_areas.inter_province }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
         </div>
       </div>
     </div>
@@ -204,19 +210,13 @@
 <section class="container">
   <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Dịch Vụ Của Chúng Tôi</h2>
   <div class="services-grid">
+    {{ range site.Data.services.services }}
     <div class="service-card">
-      <h3>Taxi Trong Thành Phố</h3>
-      <p>Phục vụ di chuyển trong nội thành Hà Tĩnh với giá cả hợp lý, tài xế thân thiện và xe sạch sẽ.</p>
+      <h3>{{ .icon }} {{ .name }}</h3>
+      <p>{{ .description }}</p>
+      <p style="font-weight: bold; color: #e74c3c;">{{ .price }}</p>
     </div>
-
-    <div class="service-card">
-      <h3>Phục Vụ 24/7</h3>
-      <p>Hoạt động 24 giờ trong ngày, 7 ngày trong tuần. Sẵn sàng phục vụ bạn bất cứ lúc nào.</p>
-    </div>
-    <div class="service-card">
-      <h3>Giá Cả Hợp Lý</h3>
-      <p>Bảng giá minh bạch, không phát sinh chi phí ẩn. Thanh toán tiền mặt hoặc chuyển khoản.</p>
-    </div>
+    {{ end }}
   </div>
 </section>
 
@@ -224,24 +224,15 @@
 <section class="container">
   <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Đội Xe Của Chúng Tôi</h2>
   <div class="services-grid">
+    {{ range site.Data.fleet.vehicles }}
     <div class="service-card">
-      <img src="/xe1.jpg" alt="Xe 4 chỗ" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-      <h3 style="color: #2c3e50; margin-bottom: 1rem;">Xe 4 Chỗ</h3>
-      <p style="color: #555; margin-bottom: 1rem;">Toyota Vios, Hyundai Accent - Phù hợp cho gia đình nhỏ, tiết kiệm nhiên liệu.</p>
-      <p style="font-size: 1.1rem; font-weight: bold; color: #e74c3c;">Giá: 15,000đ/km</p>
+      <img src="{{ .image }}" alt="{{ .name }}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+      <h3 style="color: #2c3e50; margin-bottom: 1rem;">{{ .name }}</h3>
+      <p style="color: #555; margin-bottom: 0.5rem;"><strong>{{ .models }}</strong></p>
+      <p style="color: #555; margin-bottom: 1rem;">{{ .description }}</p>
+      <p style="font-size: 1.1rem; font-weight: bold; color: #e74c3c;">Giá: {{ .price }}</p>
     </div>
-    <div class="service-card">
-      <img src="/xe2.jpg" alt="Xe 7 chỗ" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-      <h3 style="color: #2c3e50; margin-bottom: 1rem;">Xe 7 Chỗ</h3>
-      <p style="color: #555; margin-bottom: 1rem;">Toyota Innova, Mitsubishi Xpander - Phù hợp cho nhóm đông người, hành lý rộng rãi.</p>
-      <p style="font-size: 1.1rem; font-weight: bold; color: #e74c3c;">Giá: 18,000đ/km</p>
-    </div>
-    <div class="service-card">
-      <img src="/xe3.jpg" alt="Xe 16 chỗ" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-      <h3 style="color: #2c3e50; margin-bottom: 1rem;">Xe 16 Chỗ</h3>
-      <p style="color: #555; margin-bottom: 1rem;">Ford Transit, Hyundai Solati - Phù hợp cho đoàn du lịch, thoải mái cho chuyến dài.</p>
-      <p style="font-size: 1.1rem; font-weight: bold; color: #e74c3c;">Giá: Thỏa thuận</p>
-    </div>
+    {{ end }}
   </div>
   <div style="text-align: center; margin-top: 2rem;">
     <a href="/fleet/" class="btn">Xem Chi Tiết Đội Xe</a>
@@ -254,22 +245,22 @@
   <div class="contact-info">
     <div class="contact-item">
       <div>
-        <strong>Hotline:</strong> {{ site.Params.phone }}
+        <strong>Hotline:</strong> {{ site.Data.contact.contact.phone }}
       </div>
     </div>
     <div class="contact-item">
       <div>
-        <strong>Email:</strong> {{ site.Params.email }}
+        <strong>Email:</strong> {{ site.Data.contact.contact.email }}
       </div>
     </div>
     <div class="contact-item">
       <div>
-        <strong>Địa chỉ:</strong> {{ site.Params.address }}
+        <strong>Địa chỉ:</strong> {{ site.Data.contact.address.full_address }}
       </div>
     </div>
     <div class="contact-item">
       <div>
-        <strong>Thời gian phục vụ:</strong> 24/7 - Tất cả các ngày trong tuần
+        <strong>Thời gian phục vụ:</strong> {{ site.Data.contact.hours.description }}
       </div>
     </div>
   </div>
