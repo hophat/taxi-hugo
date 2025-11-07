@@ -12,7 +12,7 @@ theme = 'taxidongha'
   # SEO & Social Media
   keywords = "so taxi nghe an, taxi Nghệ An, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi"
   author = "Taxi Nghệ An"
-  image = "/banner01.jpg"
+  image = "/hero1.jpeg"
   logo = "/favicon.ico"
   
   # Business Info

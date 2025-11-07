@@ -5,11 +5,11 @@ logo:
 
 # Banner và hình ảnh chính
 banners:
-  hero: "/banner02.webp"
+  hero: "/hero1.jpeg"
   hero_alt: "Taxi Nghệ An - Đội xe chuyên nghiệp"
-  main: "/banner01.jpg"
+  main: "/hero2.jpeg"
   main_alt: "Dịch vụ taxi Nghệ An"
-  vungtau: "/banner-vungtau.jpg"
+  vungtau: "/hero3.jpeg"
   vungtau_alt: "Taxi Nghệ An phục vụ tận nơi"
 
 # Hình ảnh đội xe
