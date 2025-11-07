@@ -1157,6 +1157,33 @@
       }
     }
     
+    @keyframes popupSlideIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8) translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+    
+    @keyframes popupIconBounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes offerPulse {
+      0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+      }
+      50% { 
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(231, 76, 60, 0.6);
+      }
+    }
+    
     
     .btn {
       display: inline-block;
@@ -1926,6 +1953,188 @@
     }
     
      
+    .website-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10000;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .website-popup.show {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+    }
+    
+    .popup-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+    }
+    
+    .popup-content {
+      position: relative;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border-radius: 20px;
+      max-width: 500px;
+      width: 90%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.3),
+        0 10px 30px rgba(0, 0, 0, 0.2);
+      animation: popupSlideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .popup-close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: #666;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+    
+    .popup-close:hover {
+      color: #e74c3c;
+      transform: scale(1.1);
+    }
+    
+    .popup-header {
+      text-align: center;
+      padding: 2rem 2rem 1rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .popup-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: popupIconBounce 2s ease-in-out infinite;
+    }
+    
+    .popup-header h3 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2c3e50;
+      background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .popup-body {
+      padding: 1.5rem 2rem;
+    }
+    
+    .popup-body h4 {
+      margin: 0 0 1rem 0;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #2c3e50;
+      text-align: center;
+    }
+    
+    .popup-offer {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .offer-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 25px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      animation: offerPulse 2s ease-in-out infinite;
+      box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+    }
+    
+    .popup-body p {
+      text-align: center;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    
+    .popup-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+    }
+    
+    .popup-features li {
+      padding: 0.5rem 0;
+      color: #2c3e50;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .popup-actions {
+      padding: 1rem 2rem 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+    }
+    
+    .popup-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    
+    .popup-btn-primary {
+      background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+    }
+    
+    .popup-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(231, 76, 60, 0.6);
+    }
+    
+    .popup-btn-secondary {
+      background: linear-gradient(135deg, #0068ff 0%, #0056d3 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 104, 255, 0.4);
+    }
+    
+    .popup-btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 104, 255, 0.6);
+    }
+    
+     
     @media (max-width: 768px) {
       .header-content {
         justify-content: space-between;
@@ -2337,6 +2546,37 @@
       .footer-info h3 {
         font-size: 1.3rem;
       }
+      
+       
+      .popup-content {
+        width: 95%;
+        max-width: 400px;
+      }
+      
+      .popup-header {
+        padding: 1.5rem 1.5rem 1rem;
+      }
+      
+      .popup-header h3 {
+        font-size: 1.5rem;
+      }
+      
+      .popup-body {
+        padding: 1rem 1.5rem;
+      }
+      
+      .popup-body h4 {
+        font-size: 1.2rem;
+      }
+      
+      .popup-actions {
+        padding: 1rem 1.5rem 1.5rem;
+      }
+      
+      .popup-btn {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+      }
     }
     
      
@@ -2551,6 +2791,70 @@
   <a href="https://zalo.me/0989511431" target="_blank" class="float-zalo-btn" title="Chat Zalo 0989511431">
     <img src="/zalo.png" alt="Zalo" class="zalo-float-icon">
   </a>
+
+  
+  <div class="website-popup" id="websitePopup">
+    <div class="popup-overlay" onclick="closeWebsitePopup()"></div>
+    <div class="popup-content">
+      <button class="popup-close" onclick="closeWebsitePopup()">×</button>
+      <div class="popup-header">
+        <div class="popup-icon">🌐</div>
+        <h3>Liên Hệ Thuê Website</h3>
+      </div>
+      <div class="popup-body">
+        <h4>Làm Website Taxi Ngay Bây Giờ</h4>
+        <div class="popup-offer">
+          <span class="offer-badge">🎉 MIỄN PHÍ 1 THÁNG</span>
+        </div>
+        <p>Tạo website taxi chuyên nghiệp như thế này cho doanh nghiệp của bạn!</p>
+        <ul class="popup-features">
+          <li>✅ Thiết kế responsive, tối ưu mobile</li>
+          <li>✅ Tích hợp booking online</li>
+          <li>✅ SEO tối ưu Google</li>
+          <li>✅ Hỗ trợ 24/7</li>
+        </ul>
+      </div>
+      <div class="popup-actions">
+        <a href="tel:0989511431" class="popup-btn popup-btn-primary">
+          📞 Gọi Ngay: 0989.511.431
+        </a>
+        <a href="https://zalo.me/0989511431" target="_blank" class="popup-btn popup-btn-secondary">
+          💬 Chat Zalo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    
+    function showWebsitePopup() {
+      const popup = document.getElementById('websitePopup');
+      popup.style.display = 'flex';
+      setTimeout(() => {
+        popup.classList.add('show');
+      }, 10);
+    }
+
+    function closeWebsitePopup() {
+      const popup = document.getElementById('websitePopup');
+      popup.classList.remove('show');
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 300);
+    }
+
+    
+    setTimeout(() => {
+      showWebsitePopup();
+    }, 3000);
+
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeWebsitePopup();
+      }
+    });
+  </script>
 
   <footer>
     <div class="container">
