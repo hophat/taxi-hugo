@@ -1,34 +1,34 @@
 # Thông tin liên hệ chính
 company:
-  name: "Taxi Hưng Yên"
-  full_name: "Taxi Hưng Yên - Dịch Vụ Taxi Uy Tín"
+  name: "Taxi Nghệ An"
+  full_name: "Taxi Nghệ An - Dịch Vụ Taxi Uy Tín"
   slogan: "Uy Tín • An Toàn • Chuyên Nghiệp"
-  description: "Dịch vụ taxi uy tín tại Hưng Yên. Phục vụ 24/7 với giá cả hợp lý."
+  description: "Dịch vụ taxi uy tín tại Nghệ An. Phục vụ 24/7 với giá cả hợp lý."
 
 # Thông tin liên hệ
 contact:
   phone: "0989511431"
-  email: "info@sotaxihungyen.io.vn"
-  website: "http://taxihungyen.io.vn/"
+  email: "info@sotaxinghean.io.vn"
+  website: "http://taxinghean.io.vn/"
   
 # Địa chỉ
 address:
-  street: "Hưng Yên"
-  city: "Hưng Yên"
-  province: "Hưng Yên"
+  street: "Vinh"
+  city: "Vinh"
+  province: "Nghệ An"
   country: "Việt Nam"
-  full_address: "Hưng Yên, Việt Nam"
-  postal_code: "16000"
+  full_address: "Vinh, Nghệ An, Việt Nam"
+  postal_code: "43000"
 
 # Tọa độ GPS
 coordinates:
-  latitude: "20.6464"
-  longitude: "106.0512"
+  latitude: "18.7943"
+  longitude: "105.6745"
 
 # Mạng xã hội
 social:
-  facebook: "https://facebook.com/sotaxihungyen"
-  zalo: "https://zalo.me/sotaxihungyen"
+  facebook: "https://facebook.com/sotaxinghean"
+  zalo: "https://zalo.me/sotaxinghean"
   zalo_phone: "https://zalo.me/0989511431"
 
 # Giờ hoạt động

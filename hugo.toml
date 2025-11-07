@@ -1,32 +1,32 @@
-baseURL = 'http://taxihungyen.io.vn/'
+baseURL = 'http://taxinghean.io.vn/'
 languageCode = 'vi'
-title = 'Taxi Hưng Yên - Dịch Vụ Taxi Uy Tín'
+title = 'Taxi Nghệ An - Dịch Vụ Taxi Uy Tín'
 theme = 'taxidongha'
 
 [params]
-  description = "Dịch vụ taxi uy tín tại Hưng Yên. Phục vụ 24/7 với giá cả hợp lý."
+  description = "Dịch vụ taxi uy tín tại Nghệ An. Phục vụ 24/7 với giá cả hợp lý."
   phone = "0989511431"
-  email = "info@sotaxihungyen.io.vn"
-  address = "Hưng Yên, Việt Nam"
+  email = "info@sotaxinghean.io.vn"
+  address = "Nghệ An, Việt Nam"
   
   # SEO & Social Media
-  keywords = "so taxi hung yen, taxi Hưng Yên, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi"
-  author = "Taxi Hưng Yên"
+  keywords = "so taxi nghe an, taxi Nghệ An, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi"
+  author = "Taxi Nghệ An"
   image = "/banner01.jpg"
   logo = "/favicon.ico"
   
   # Business Info
-  business_name = "Taxi Hưng Yên"
+  business_name = "Taxi Nghệ An"
   business_type = "TaxiService"
-  latitude = "18.3402"
-  longitude = "105.9005"
-  postal_code = "45000"
-  region = "Hưng Yên"
+  latitude = "18.7943"
+  longitude = "105.6745"
+  postal_code = "43000"
+  region = "Nghệ An"
   country = "Vietnam"
   
   # Social Media
-  facebook = "https://facebook.com/sotaxihatinh"
-  zalo = "https://zalo.me/sotaxihatinh"
+  facebook = "https://facebook.com/sotaxinghean"
+  zalo = "https://zalo.me/sotaxinghean"
 
 # AMP Configuration
 [outputFormats.AMP]

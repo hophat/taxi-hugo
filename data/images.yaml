@@ -1,16 +1,16 @@
 # Cấu hình hình ảnh website
 logo:
   main: "/favicon.ico"
-  alt: "Taxi Hưng Yên Logo"
+  alt: "Taxi Nghệ An Logo"
 
 # Banner và hình ảnh chính
 banners:
   hero: "/banner02.webp"
-  hero_alt: "Taxi Hưng Yên - Đội xe chuyên nghiệp"
+  hero_alt: "Taxi Nghệ An - Đội xe chuyên nghiệp"
   main: "/banner01.jpg"
-  main_alt: "Dịch vụ taxi Hưng Yên"
+  main_alt: "Dịch vụ taxi Nghệ An"
   vungtau: "/banner-vungtau.jpg"
-  vungtau_alt: "Taxi Hưng Yên phục vụ tận nơi"
+  vungtau_alt: "Taxi Nghệ An phục vụ tận nơi"
 
 # Hình ảnh đội xe
 fleet:

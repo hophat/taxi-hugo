@@ -1,13 +1,13 @@
 # Cấu hình SEO và Meta Tags
 meta:
-  title: "Taxi Hưng Yên - Dịch Vụ Taxi Uy Tín"
-  description: "Dịch vụ taxi uy tín tại Hưng Yên. Phục vụ 24/7 với giá cả hợp lý."
-  keywords: "so taxi hung yen, taxi Hưng Yên, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi"
-  author: "Taxi Hưng Yên"
+  title: "Taxi Nghệ An - Dịch Vụ Taxi Uy Tín"
+  description: "Dịch vụ taxi uy tín tại Nghệ An. Phục vụ 24/7 với giá cả hợp lý."
+  keywords: "so taxi nghe an, taxi Nghệ An, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi"
+  author: "Taxi Nghệ An"
 
 # Open Graph
 og:
-  site_name: "Taxi Hưng Yên"
+  site_name: "Taxi Nghệ An"
   type: "website"
   locale: "vi_VN"
   image: "/banner01.jpg"
@@ -15,19 +15,19 @@ og:
 # Twitter Card
 twitter:
   card: "summary_large_image"
-  site: "@taxihatinh"
+  site: "@taxinghean"
 
 # Schema.org - Structured Data
 schema:
   business_type: "TaxiService"
-  name: "Taxi Hưng Yên"
-  alternate_name: "Taxi Hưng Yên - Dịch Vụ Taxi Uy Tín"
-  description: "Dịch vụ taxi uy tín tại Hưng Yên. Phục vụ 24/7 với giá cả hợp lý."
+  name: "Taxi Nghệ An"
+  alternate_name: "Taxi Nghệ An - Dịch Vụ Taxi Uy Tín"
+  description: "Dịch vụ taxi uy tín tại Nghệ An. Phục vụ 24/7 với giá cả hợp lý."
   opening_hours: "Mo-Su 00:00-23:59"
   price_range: "$$"
   
 # Zalo Meta
 zalo:
-  title: "Taxi Hưng Yên - Dịch Vụ Taxi Uy Tín"
-  description: "Dịch vụ taxi uy tín tại Hưng Yên. Phục vụ 24/7 với giá cả hợp lý."
+  title: "Taxi Nghệ An - Dịch Vụ Taxi Uy Tín"
+  description: "Dịch vụ taxi uy tín tại Nghệ An. Phục vụ 24/7 với giá cả hợp lý."
   image: "/banner01.jpg"

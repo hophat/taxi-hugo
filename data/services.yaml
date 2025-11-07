@@ -1,13 +1,13 @@
 # Cấu hình dịch vụ taxi
 services:
   - name: "Taxi Trong Thành Phố"
-    description: "Phục vụ di chuyển trong nội thành Hưng Yên với giá cả hợp lý, tài xế thân thiện và xe sạch sẽ."
+    description: "Phục vụ di chuyển trong nội thành Vinh với giá cả hợp lý, tài xế thân thiện và xe sạch sẽ."
     price: "15,000đ/km"
     icon: "🚕"
 
   - name: "Taxi Liên Tỉnh"
-    description: "Đưa đón sân bay Nội Bài, di chuyển đến Hà Nội, Hải Phòng với mức giá cạnh tranh."
-    price: "Từ 300,000đ"
+    description: "Đưa đón sân bay Vinh, di chuyển đến Hà Tĩnh, Quảng Bình với mức giá cạnh tranh."
+    price: "Từ 120,000đ"
     icon: "🚗"
 
   - name: "Phục Vụ 24/7"
@@ -18,17 +18,17 @@ services:
 # Khu vực phục vụ
 service_areas:
   local:
-    - "Nội thành Hưng Yên"
-    - "Các huyện trong Hưng Yên"
+    - "Nội thành Vinh"
+    - "Các huyện trong Nghệ An"
   
   inter_province:
+    - "Hà Tĩnh"
+    - "Quảng Bình" 
+    - "Thanh Hóa"
     - "Hà Nội"
-    - "Hải Phòng" 
-    - "Bắc Ninh"
-    - "Hải Dương"
   
   airports:
-    - "Sân bay Nội Bài"
+    - "Sân bay Vinh"
   
   tourist:
     - "Các điểm du lịch trong tỉnh"
@@ -40,14 +40,14 @@ pricing:
     name: "Trong Thành Phố"
     price: "15,000đ/km"
   
-  airport_noibai:
-    name: "Sân Bay Nội Bài"
-    price: "150,000đ"
-  
-  hanoi:
-    name: "Đi Hà Nội"
+  airport_vinh:
+    name: "Sân Bay Vinh"
     price: "120,000đ"
   
-  haiphong:
-    name: "Đi Hải Phòng"
+  hatinh:
+    name: "Đi Hà Tĩnh"
     price: "180,000đ"
+  
+  quangbinh:
+    name: "Đi Quảng Bình"
+    price: "220,000đ"
