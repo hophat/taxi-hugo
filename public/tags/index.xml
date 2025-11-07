@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Taxi Bắc Ninh - Dịch Vụ Taxi Uy Tín</title>
-    <link>http://sotaxihatinh.io.vn/tags/</link>
+    <link>https://taxibacninh.io.vn/tags/</link>
     <description>Recent content in Tags on Taxi Bắc Ninh - Dịch Vụ Taxi Uy Tín</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
-    <atom:link href="http://sotaxihatinh.io.vn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://taxibacninh.io.vn/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blue</title>
-      <link>http://sotaxihatinh.io.vn/tags/blue/</link>
+      <link>https://taxibacninh.io.vn/tags/blue/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://sotaxihatinh.io.vn/tags/blue/</guid>
+      <guid>https://taxibacninh.io.vn/tags/blue/</guid>
       <description></description>
     </item>
     <item>
       <title>Green</title>
-      <link>http://sotaxihatinh.io.vn/tags/green/</link>
+      <link>https://taxibacninh.io.vn/tags/green/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://sotaxihatinh.io.vn/tags/green/</guid>
+      <guid>https://taxibacninh.io.vn/tags/green/</guid>
       <description></description>
     </item>
     <item>
       <title>Red</title>
-      <link>http://sotaxihatinh.io.vn/tags/red/</link>
+      <link>https://taxibacninh.io.vn/tags/red/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://sotaxihatinh.io.vn/tags/red/</guid>
+      <guid>https://taxibacninh.io.vn/tags/red/</guid>
       <description></description>
     </item>
   </channel>

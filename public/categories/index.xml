@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Taxi Bắc Ninh - Dịch Vụ Taxi Uy Tín</title>
-    <link>http://sotaxihatinh.io.vn/categories/</link>
+    <link>https://taxibacninh.io.vn/categories/</link>
     <description>Recent content in Categories on Taxi Bắc Ninh - Dịch Vụ Taxi Uy Tín</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://sotaxihatinh.io.vn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://taxibacninh.io.vn/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

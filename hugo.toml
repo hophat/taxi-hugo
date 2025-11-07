@@ -1,4 +1,4 @@
-baseURL = 'http://sotaxihatinh.io.vn/'
+baseURL = 'https://taxibacninh.io.vn/'
 languageCode = 'vi'
 title = 'Taxi Bắc Ninh - Dịch Vụ Taxi Uy Tín'
 theme = 'taxidongha'
