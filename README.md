@@ -1,6 +1,6 @@
-# Taxi Hải Phòng Website
+# Taxi Ninh Bình Website
 
-Website giới thiệu dịch vụ taxi tại Hải Phòng được xây dựng bằng Hugo.
+Website giới thiệu dịch vụ taxi tại Ninh Bình được xây dựng bằng Hugo.
 
 ## Cấu trúc dự án
 
