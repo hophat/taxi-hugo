@@ -1,9 +1,9 @@
 ---
 title: "Cập Nhật Bảng Giá Cước Taxi Mới Năm 2024"
 date: 2024-11-05T14:30:00+07:00
-description: "Taxi Bắc Ninh công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
-summary: "Taxi Bắc Ninh công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
-keywords: "bảng giá taxi, giá cước taxi, taxi Bắc Ninh, giá taxi 2024, Bắc Ninh"
+description: "Taxi Hưng Yên công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
+summary: "Taxi Hưng Yên công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
+keywords: "bảng giá taxi, giá cước taxi, taxi Hưng Yên, giá taxi 2024, Hưng Yên"
 image: "/banner01.jpg"
 ---
 
@@ -11,7 +11,7 @@ image: "/banner01.jpg"
 
 Kính gửi quý khách hàng,
 
-**Taxi Bắc Ninh** xin thông báo bảng giá cước mới có hiệu lực từ ngày **01/11/2024**, nhằm mang đến dịch vụ tốt nhất với mức giá hợp lý.
+**Taxi Hưng Yên** xin thông báo bảng giá cước mới có hiệu lực từ ngày **01/11/2024**, nhằm mang đến dịch vụ tốt nhất với mức giá hợp lý.
 
 ## Bảng Giá Mới
 
@@ -29,10 +29,10 @@ Kính gửi quý khách hàng,
 
 | Tuyến Đường | Giá Cước |
 |-------------|----------|
-| Bắc Ninh - Sân bay Vinh | 280,000 VNĐ |
-| Bắc Ninh - Nghệ An | 180,000 VNĐ |
-| Bắc Ninh - Quảng Bình | 220,000 VNĐ |
-| Bắc Ninh - Thành phố Hồ Chí Minh | Thỏa thuận |
+| Hưng Yên - Sân bay Vinh | 280,000 VNĐ |
+| Hưng Yên - Nghệ An | 180,000 VNĐ |
+| Hưng Yên - Quảng Bình | 220,000 VNĐ |
+| Hưng Yên - Thành phố Hồ Chí Minh | Thỏa thuận |
 
 ## Chính Sách Ưu Đãi
 

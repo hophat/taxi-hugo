@@ -61,14 +61,47 @@
         </div>
       </div>
       
-      <!-- Right Image -->
+      <!-- Right Image Slider -->
       <div class="hero-right">
-        <div class="hero-image-container">
-          <img src="{{ site.Data.images.banners.hero }}" alt="{{ site.Data.images.banners.hero_alt }}" class="hero-banner-image">
-          <div class="hero-image-overlay">
-            <div class="image-badge">
-              <span>Đội xe hiện đại</span>
+        <div class="hero-slider-container">
+          <div class="hero-slider">
+            <div class="slide active">
+              <img src="{{ site.Data.images.banners.hero }}" alt="{{ site.Data.images.banners.hero_alt }}" class="hero-banner-image">
+              <div class="slide-overlay">
+                <div class="slide-badge">
+                  <span>Đội xe hiện đại</span>
+                </div>
+              </div>
             </div>
+            <div class="slide">
+              <img src="{{ site.Data.images.banners.main }}" alt="{{ site.Data.images.banners.main_alt }}" class="hero-banner-image">
+              <div class="slide-overlay">
+                <div class="slide-badge">
+                  <span>Dịch vụ chuyên nghiệp</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="{{ site.Data.images.banners.vungtau }}" alt="{{ site.Data.images.banners.vungtau_alt }}" class="hero-banner-image">
+              <div class="slide-overlay">
+                <div class="slide-badge">
+                  <span>Phục vụ tận nơi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn" onclick="changeSlide(-1)">‹</button>
+            <button class="slider-btn next-btn" onclick="changeSlide(1)">›</button>
+          </div>
+          
+          <!-- Slider Dots -->
+          <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
           </div>
         </div>
       </div>
