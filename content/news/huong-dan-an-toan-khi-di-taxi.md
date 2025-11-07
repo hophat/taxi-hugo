@@ -3,13 +3,13 @@ title: "Hướng Dẫn An Toàn Khi Đi Taxi Trong Mùa Mưa Bão"
 date: 2024-11-04T09:15:00+07:00
 description: "Những lưu ý quan trọng để đảm bảo an toàn khi sử dụng dịch vụ taxi trong điều kiện thời tiết xấu, đặc biệt là mùa mưa bão tại miền Trung."
 summary: "Những lưu ý quan trọng để đảm bảo an toàn khi sử dụng dịch vụ taxi trong điều kiện thời tiết xấu, đặc biệt là mùa mưa bão tại miền Trung."
-keywords: "an toàn taxi, mùa mưa bão, hướng dẫn taxi, taxi Hải Phòng, an toàn giao thông"
+keywords: "an toàn taxi, mùa mưa bão, hướng dẫn taxi, taxi Hà Tĩnh, an toàn giao thông"
 image: "/banner01.jpg"
 ---
 
 # Hướng Dẫn An Toàn Khi Đi Taxi Trong Mùa Mưa Bão
 
-Mùa mưa bão đang đến gần, **Taxi Hải Phòng** xin chia sẻ những kinh nghiệm quan trọng để đảm bảo an toàn cho hành khách khi di chuyển trong điều kiện thời tiết khắc nghiệt.
+Mùa mưa bão đang đến gần, **Taxi Hà Tĩnh** xin chia sẻ những kinh nghiệm quan trọng để đảm bảo an toàn cho hành khách khi di chuyển trong điều kiện thời tiết khắc nghiệt.
 
 ## Trước Khi Đặt Xe
 

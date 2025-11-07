@@ -1,9 +1,9 @@
 ---
 title: "Cập Nhật Bảng Giá Cước Taxi Mới Năm 2024"
 date: 2024-11-05T14:30:00+07:00
-description: "Taxi Hải Phòng công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
-summary: "Taxi Hải Phòng công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
-keywords: "bảng giá taxi, giá cước taxi, taxi Hải Phòng, giá taxi 2024, Quảng Trị"
+description: "Taxi Hà Tĩnh công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
+summary: "Taxi Hà Tĩnh công bố bảng giá cước mới áp dụng từ tháng 11/2024, với mức giá cạnh tranh và nhiều ưu đãi hấp dẫn cho khách hàng."
+keywords: "bảng giá taxi, giá cước taxi, taxi Hà Tĩnh, giá taxi 2024, Hà Tĩnh"
 image: "/banner01.jpg"
 ---
 
@@ -11,7 +11,7 @@ image: "/banner01.jpg"
 
 Kính gửi quý khách hàng,
 
-**Taxi Hải Phòng** xin thông báo bảng giá cước mới có hiệu lực từ ngày **01/11/2024**, nhằm mang đến dịch vụ tốt nhất với mức giá hợp lý.
+**Taxi Hà Tĩnh** xin thông báo bảng giá cước mới có hiệu lực từ ngày **01/11/2024**, nhằm mang đến dịch vụ tốt nhất với mức giá hợp lý.
 
 ## Bảng Giá Mới
 
@@ -29,10 +29,10 @@ Kính gửi quý khách hàng,
 
 | Tuyến Đường | Giá Cước |
 |-------------|----------|
-| Hải Phòng - Sân bay Phú Bài | 450,000 VNĐ |
-| Hải Phòng - Huế | 350,000 VNĐ |
-| Hải Phòng - DMZ | 280,000 VNĐ |
-| Hải Phòng - Vinh Mốc | 320,000 VNĐ |
+| Hà Tĩnh - Sân bay Vinh | 280,000 VNĐ |
+| Hà Tĩnh - Nghệ An | 180,000 VNĐ |
+| Hà Tĩnh - Quảng Bình | 220,000 VNĐ |
+| Hà Tĩnh - Thành phố Hồ Chí Minh | Thỏa thuận |
 
 ## Chính Sách Ưu Đãi
 

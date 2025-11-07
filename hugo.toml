@@ -1,32 +1,32 @@
-baseURL = 'http://sotaxihaiphong.io.vn/'
+baseURL = 'http://sotaxihatinh.io.vn/'
 languageCode = 'vi'
-title = 'Taxi Hải Phòng - Dịch Vụ Taxi Uy Tín'
+title = 'Taxi Hà Tĩnh - Dịch Vụ Taxi Uy Tín'
 theme = 'taxidongha'
 
 [params]
-  description = "Dịch vụ taxi uy tín tại Hải Phòng. Phục vụ 24/7 với giá cả hợp lý."
+  description = "Dịch vụ taxi uy tín tại Hà Tĩnh. Phục vụ 24/7 với giá cả hợp lý."
   phone = "0989511431"
-  email = "info@sotaxihaiphong.io.vn"
-  address = "Hải Phòng, Việt Nam"
+  email = "info@sotaxihatinh.io.vn"
+  address = "Hà Tĩnh, Việt Nam"
   
   # SEO & Social Media
-  keywords = "taxi Hải Phòng, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi"
-  author = "Taxi Hải Phòng"
+  keywords = "taxi Hà Tĩnh, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi"
+  author = "Taxi Hà Tĩnh"
   image = "/banner01.jpg"
   logo = "/favicon.ico"
   
   # Business Info
-  business_name = "Taxi Hải Phòng"
+  business_name = "Taxi Hà Tĩnh"
   business_type = "TaxiService"
-  latitude = "20.8449"
-  longitude = "106.6881"
-  postal_code = "18000"
-  region = "Hải Phòng"
+  latitude = "18.3402"
+  longitude = "105.9005"
+  postal_code = "45000"
+  region = "Hà Tĩnh"
   country = "Vietnam"
   
   # Social Media
-  facebook = "https://facebook.com/sotaxihaiphong"
-  zalo = "https://zalo.me/sotaxihaiphong"
+  facebook = "https://facebook.com/sotaxihatinh"
+  zalo = "https://zalo.me/sotaxihatinh"
 
 # AMP Configuration
 [outputFormats.AMP]
