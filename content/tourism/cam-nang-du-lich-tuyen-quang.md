@@ -4,7 +4,7 @@ date: 2024-11-08T13:00:00+07:00
 description: "Hướng dẫn chi tiết du lịch Tuyên Quang với những điểm đến hấp dẫn, ẩm thực đặc sản và kinh nghiệm du lịch"
 image: "/tuyenquang.jpeg"
 category: "Cẩm Nang Du Lịch"
-tags: ["Du lịch Tuyên Quang", "Cẩm nang", "Kinh nghiệm", "Hướng dẫn"]
+tags: ["Du lịch Tuyên Quang", "Kinh nghiệm", "Hướng dẫn"]
 ---
 
 # Cẩm Nang Du Lịch Tuyên Quang - Khám Phá Vùng Đất Anh Hùng
