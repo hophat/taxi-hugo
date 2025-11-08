@@ -1,34 +1,34 @@
 # Thông tin liên hệ chính
 company:
   name: "0989.511.431"
-  full_name: "Taxi Sapa - Dịch Vụ Taxi Uy Tín"
+  full_name: "Taxi Tuyên Quang - Dịch Vụ Taxi Uy Tín"
   slogan: "Uy Tín • An Toàn • Chuyên Nghiệp"
-  description: "Dịch vụ taxi uy tín tại Sapa. Phục vụ 24/7 với giá cả hợp lý."
+  description: "Dịch vụ taxi uy tín tại Tuyên Quang. Phục vụ 24/7 với giá cả hợp lý."
 
 # Thông tin liên hệ
 contact:
   phone: "0989511431"
-  email: "info@sotaxisapa.io.vn"
-  website: "http://taxisapa.io.vn/"
+  email: "info@taxituyenquang.io.vn"
+  website: "http://taxituyenquang.io.vn/"
   
 # Địa chỉ
 address:
-  street: "Sapa"
-  city: "Sapa"
-  province: "Lào Cai"
+  street: "Tuyên Quang"
+  city: "Tuyên Quang"
+  province: "Tuyên Quang"
   country: "Việt Nam"
-  full_address: "Sapa, Lào Cai, Việt Nam"
-  postal_code: "33000"
+  full_address: "Tuyên Quang, Việt Nam"
+  postal_code: "22000"
 
 # Tọa độ GPS
 coordinates:
-  latitude: "22.3364"
-  longitude: "103.8438"
+  latitude: "21.8267"
+  longitude: "105.2280"
 
 # Mạng xã hội
 social:
-  facebook: "https://facebook.com/sotaxisapa"
-  zalo: "https://zalo.me/sotaxisapa"
+  facebook: "https://facebook.com/taxituyenquang"
+  zalo: "https://zalo.me/taxituyenquang"
   zalo_phone: "https://zalo.me/0989511431"
 
 # Giờ hoạt động

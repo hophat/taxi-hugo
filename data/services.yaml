@@ -1,13 +1,13 @@
 # Cấu hình dịch vụ taxi
 services:
   - name: "Taxi Trong Thành Phố"
-    description: "Phục vụ di chuyển trong nội thành Sapa với giá cả hợp lý, tài xế thân thiện và xe sạch sẽ."
+    description: "Phục vụ di chuyển trong nội thành Tuyên Quang với giá cả hợp lý, tài xế thân thiện và xe sạch sẽ."
     price: "18,000đ/km"
     icon: "🚕"
 
   - name: "Taxi Liên Tỉnh"
-    description: "Đưa đón sân bay Nội Bài, di chuyển đến Hà Nội, Lào Cai với mức giá cạnh tranh."
-    price: "Từ 150,000đ"
+    description: "Đưa đón sân bay Nội Bài, di chuyển đến Hà Nội, Thái Nguyên với mức giá cạnh tranh."
+    price: "Từ 200,000đ"
     icon: "🚗"
 
   - name: "Phục Vụ 24/7"
@@ -18,22 +18,23 @@ services:
 # Khu vực phục vụ
 service_areas:
   local:
-    - "Nội thành Sapa"
-    - "Các huyện trong Lào Cai"
+    - "Nội thành Tuyên Quang"
+    - "Các huyện trong Tuyên Quang"
   
   inter_province:
     - "Hà Nội"
-    - "Lào Cai" 
+    - "Thái Nguyên" 
     - "Yên Bái"
     - "Hà Giang"
+    - "Cao Bằng"
   
   airports:
     - "Sân bay Nội Bài"
   
   tourist:
-    - "Fansipan"
-    - "Bản Cát Cát"
-    - "Thác Bạc"
+    - "Hồ Na Hang"
+    - "Khu du lịch Tân Trào"
+    - "Đền Hạ"
     - "Các điểm du lịch trong vùng"
 
 # Bảng giá tham khảo
@@ -44,12 +45,12 @@ pricing:
   
   airport_noibai:
     name: "Sân Bay Nội Bài"
-    price: "1,200,000đ"
+    price: "1,500,000đ"
   
   hanoi:
     name: "Đi Hà Nội"
-    price: "1,000,000đ"
+    price: "1,200,000đ"
   
-  laocai:
-    name: "Đi Lào Cai"
-    price: "150,000đ"
+  thainguyen:
+    name: "Đi Thái Nguyên"
+    price: "200,000đ"

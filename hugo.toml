@@ -1,32 +1,32 @@
-baseURL = 'http://taxisapa.io.vn/'
+baseURL = 'http://taxituyenquang.io.vn/'
 languageCode = 'vi'
-title = 'Taxi Sapa - Dịch Vụ Taxi Uy Tín'
+title = 'Taxi Tuyên Quang - Dịch Vụ Taxi Uy Tín'
 theme = 'taxidongha'
 
 [params]
-  description = "Dịch vụ taxi uy tín tại Sapa. Phục vụ 24/7 với giá cả hợp lý."
+  description = "Dịch vụ taxi uy tín tại Tuyên Quang. Phục vụ 24/7 với giá cả hợp lý."
   phone = "0989511431"
-  email = "info@sotaxisapa.io.vn"
-  address = "Sapa, Lào Cai, Việt Nam"
+  email = "info@taxituyenquang.io.vn"
+  address = "Tuyên Quang, Việt Nam"
   
   # SEO & Social Media
-  keywords = "so taxi sapa, taxi Sapa, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi, taxi Lào Cai"
-  author = "Taxi Sapa"
+  keywords = "taxi Tuyên Quang, dịch vụ taxi, taxi 24/7, taxi uy tín, xe taxi, taxi Tuyên Quang"
+  author = "Taxi Tuyên Quang"
   image = "/hero1.jpeg"
   logo = "/favicon.ico"
   
   # Business Info
-  business_name = "Taxi Sapa"
+  business_name = "Taxi Tuyên Quang"
   business_type = "TaxiService"
-  latitude = "22.3364"
-  longitude = "103.8438"
-  postal_code = "33000"
-  region = "Lào Cai"
+  latitude = "21.8267"
+  longitude = "105.2280"
+  postal_code = "22000"
+  region = "Tuyên Quang"
   country = "Vietnam"
   
   # Social Media
-  facebook = "https://facebook.com/sotaxisapa"
-  zalo = "https://zalo.me/sotaxisapa"
+  facebook = "https://facebook.com/taxituyenquang"
+  zalo = "https://zalo.me/taxituyenquang"
 
 # AMP Configuration
 [outputFormats.AMP]
@@ -55,14 +55,18 @@ theme = 'taxidongha'
     url = "/fleet/"
     weight = 3
   [[menu.main]]
+    name = "Du Lịch"
+    url = "/tourism/"
+    weight = 4
+  [[menu.main]]
     name = "Tin Tức"
     url = "/news/"
-    weight = 4
+    weight = 5
   [[menu.main]]
     name = "Liên Hệ"
     url = "/contact/"
-    weight = 5
+    weight = 6
   [[menu.main]]
     name = "📞 0989511431"
     url = "tel:0989511431"
-    weight = 6
+    weight = 7
